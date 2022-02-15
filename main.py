@@ -14,7 +14,9 @@ while True:
         num_seconds = random.randint(2, 10)
         if pyautogui.onScreen(x, y): 
             pyautogui.moveTo(x, y, duration=num_seconds)
-            sleep(10)
+            sleep(20)
+        for i in range(3):
+            pyautogui.press('shift')
     except KeyboardInterrupt:
         exit()
     except:
